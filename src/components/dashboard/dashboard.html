@@ -1,0 +1,6 @@
+
+<info 
+    [title]=" (((status$ | async) === 0)?'Ready':'Playing')" 
+    [text]="(elapsedMs$ | async) + 's' "></info>
+<info title="Remains" [text]="remains$ | async"></info>
+<info title="Top" [text]="highestSpeed$ | async"></info>
